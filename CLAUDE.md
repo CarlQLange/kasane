@@ -27,7 +27,7 @@ Browsers cache `index.html` aggressively from the local server; load with a `?v=
 
 Then, in the site repo: rebuild to check, commit the release, and deploy with `git push dokku main`. The arcade write-up page is `src/content/arcade/kasane.md` there; its description is Carl's to write.
 
-Do not push either repo, create or publicise the GitHub repo (`CarlQLange/kasane` is planned), or deploy, until Carl says so. Prose that appears on Carl's website as his (the arcade description, a README for this repo) is his to write; leave placeholders rather than drafting it.
+Source is public at https://github.com/CarlQLange/kasane, and the game is live at https://redfloatplane.lol/arcade/kasane/. Push and deploy only when Carl asks. Keep the site repo's GitHub `main` in step with what's deployed to dokku, because the Scraps blog sync deploys from GitHub `main`. Prose that appears on Carl's website as his (the arcade description, a README for this repo) is his to write; leave placeholders rather than drafting it.
 
 ## Design decisions Carl has made
 
