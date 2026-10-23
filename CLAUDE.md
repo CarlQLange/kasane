@@ -13,13 +13,12 @@ The whole game is `index.html` (one file of HTML, CSS and JS, no build step) plu
 
 ## Running and testing
 
-Serve the folder and open it: `python3 -m http.server 8765`. Fonts come from Google Fonts.
+Serve the folder with the no-cache server from the browser-game skill and open it: `python3 ~/.claude/skills/browser-game/scripts/serve.py 8765 .`. Fonts come from Google Fonts.
 
 The game exposes its state as globals, so the reliable way to test is to drive it from the browser console rather than play by hand: `start()`, set `pool`, set `nextType` and `spawnAt = 0`, call `tick(DT)` in a loop, `moveTo(x)`, `slam()`, then inspect `ps`, `runFound`, `nearMiss`, `clears`. Set `hitstop = 0` inside loops or clears will stall the simulation.
 
 Progress lives in `localStorage` under `walltowall-best` and `walltowall-notebook` (the game's old name; keep the keys so saved progress survives). Testing in the same browser writes to Carl's real notebook, so save both keys before a test run and restore them after.
 
-Browsers cache `index.html` aggressively from the local server; load with a `?v=N` query to be sure you're seeing the latest.
 
 ## Releasing
 
