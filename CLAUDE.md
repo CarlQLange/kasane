@@ -28,7 +28,9 @@ Then, in the site repo: rebuild to check, commit the release, and deploy with `g
 
 Source is public at https://github.com/CarlQLange/kasane, and the game is live at https://redfloatplane.lol/arcade/kasane/. Push and deploy only when Carl asks. Keep the site repo's GitHub `main` in step with what's deployed to dokku, because the Scraps blog sync deploys from GitHub `main`. Prose that appears on Carl's website as his (the arcade description, a README for this repo) is his to write; leave placeholders rather than drafting it.
 
-## Design decisions Carl has made
+## Design decisions Carl has made for Kasane
+
+These are about this game only. They are not house rules for other games.
 
 - **Silent.** `sfx` is a no-op proxy and the M key is gone. Don't add sound.
 - **Linocut / woodblock style.** Cream washi paper, thick ink outlines, flat muted pigments, carved marks per material (`carve`: stipple for powders, waves for liquids, shine for ice and glass, gouges for solids). New art must match: magenta-backed icon sheets generated in this style, keyed out with the approach in `art/slice_icons.py`.
